@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>EcoTrend</title>
+</head>
+<body>
+    <header>
+        <div class="header__logo">
+            <img src="./images/logo.webp" alt="Logo eco EcoTrend">
+        </div>
+        <div class="header__menu">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Carrinho</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <aside class="container__sidebar">
+                <div class="container__sidebar-header">
+                    <h3>Seu carrinho</h3>
+                </div>
+                <div id="cart-items"></div>
+                <div class="container__sidebar-total">
+                    <h3>Total:</h3>
+                    <p>Total: R$ <span id="cart-total">0</span></p>
+                </div>
+                <button id="clear-cart" onclick="clearCart()">
+                    Limpar carrinho
+                </button>
+                <button id="checkout" onclick="checkout()">
+                    Finalizar compra
+                </button>
+            </aside>
+            <div class="container__main">
+                <h2>Nossos Produtos</h2>
+                
+                <div class="container__filter">
+                    <div id="filters">
+                        <span>Filtrar por categoria:</span>
+
+                        <button onclick="filterProducts('Todos')">Todos</button>
+                        <button onclick="filterProducts('Roupas e acessórios')">Roupas</button>
+                        <button onclick="filterProducts('Produtos de beleza')">Beleza</button>
+                        <button onclick="filterProducts('Itens para casa')">Casa</button>
+                        <button onclick="filterProducts('Tecnologia')">Tecnologia</button>
+                    </div>
+                </div>
+                <div class="products" id="product-list"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__names">
+            <p>Gilberto Hideaki Matsunaga RM568191</p>
+        </div>
+    </footer>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
