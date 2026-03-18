@@ -4,7 +4,7 @@
 
 # 👨‍💻 Autor
 
-**Gilberto Hideaki Matsunaga** - RM568191
+**Gilberto Hideaki Matsunaga** - RM568191  
 **Diogo Henrique Alves Magalhães** - RM568541
 
 ---
